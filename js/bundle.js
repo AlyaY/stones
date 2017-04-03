@@ -237,7 +237,7 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {
   // player.playVideo();
   play =  document.getElementById('play'); 
-  play.click();
+  // play.click();
   var player = event.target;
   iframe = document.getElementById('player');     
   updateTimerDisplay();
@@ -271,7 +271,7 @@ function formatTime(time){
 
  var yaParams = {};
  $(document).ready(function() {   
-
+play.click();
    // yaParams.ab__main="Стандартный вариант"; //описание варианта 1
    // var pagename = window.location.pathname; //получаем название папки из url
    // pagename = pagename.replace(/\//g,'');// убираем /
