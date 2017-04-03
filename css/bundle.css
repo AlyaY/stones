@@ -3187,8 +3187,10 @@ body {
 }
 
 .video-pop-up {
+  top: 20px;
   z-index: 198;
   display: none;
+  padding-top: 20px;
   position: fixed;
   width: 100%;
   height: auto;
@@ -3197,7 +3199,6 @@ body {
 .video {
   display: none;
   width: 100%;
-  padding-top: 56.5%;
 }
 
 .video-pop-up__close-btn {
