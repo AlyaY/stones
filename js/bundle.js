@@ -219,6 +219,7 @@ function setCookie(name, value, options) {
 }
 var player, play;
 
+var x = window.innerWidth, y = window.innerHeight;
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
@@ -236,11 +237,11 @@ function onYouTubeIframeAPIReady() {
 
 function onPlayerReady(event) {
   // player.playVideo();
-  play =  document.getElementById('play'); 
+  // play =  document.getElementById('play'); 
   var player = event.target;
   iframe = document.getElementById('player');     
   updateTimerDisplay();
-  play.click();
+  // play.click();
         
   time_update_interval = setInterval(function () {
     updateTimerDisplay();
@@ -257,11 +258,9 @@ function loadPlaylistVideoIds() {
       });
 }     
 
-// Обновляем время на панельке - счетчик
 function updateTimerDisplay(){
   document.getElementById('time').innerHTML = formatTime(player.getCurrentTime());
 }
-/*Формат времени*/
 function formatTime(time){
   time = Math.round(time);
   var minutes = Math.floor(time / 60), seconds = time - minutes * 60;
@@ -271,7 +270,7 @@ function formatTime(time){
 
  var yaParams = {};
  $(document).ready(function() {   
-play.click();
+// play.click();
    // yaParams.ab__main="Стандартный вариант"; //описание варианта 1
    // var pagename = window.location.pathname; //получаем название папки из url
    // pagename = pagename.replace(/\//g,'');// убираем /
@@ -400,8 +399,6 @@ play.click();
        var bgPos = 'center ' + yPos + 'px';
        $(this).css({ backgroundPosition: bgPos });
      });
-
-
    });
 
    $('.certificates-slider, .thanks-slider').magnificPopup({
@@ -531,6 +528,9 @@ play.click();
 
    });
    $('.js-video').click(function(e) {
+      $('.video-pop-up').addClass('pop-up--show');
+      $('.pop-up-bg').addClass('pop-up--show');
+      player.playVideo();
 
    });
 

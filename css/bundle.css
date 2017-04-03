@@ -3186,7 +3186,33 @@ body {
   }
 }
 
+.video-pop-up {
+  z-index: 198;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: auto;
+}
+
+.video {
+  display: none;
+  width: 100%;
+  padding-top: 56.5%;
+}
+
+.video-pop-up__close-btn {
+  color: #fff;
+  right: -6px;
+  text-align: right;
+  padding-right: 6px;
+  width: 100%;
+}
+
 .pop-up--show {
+  display: block;
+}
+
+.pop-up--show .video {
   display: block;
 }
 
