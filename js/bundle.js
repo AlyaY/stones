@@ -235,6 +235,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
+  player.playVideo();
   var player = event.target;
   iframe = document.getElementById('player');     
   updateTimerDisplay();
