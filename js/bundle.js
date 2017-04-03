@@ -217,14 +217,14 @@ function setCookie(name, value, options) {
   console.log(' document.cookie: '+document.cookie);
 
 }
-var player;
+var player, play;
 
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
     height: '500',
     width: '850',
-    playerVars: { 'autoplay': 1, 'controls': 0, 'showinfo': 0, 'rel': 0, 'modestbranding': 1 },
+    playerVars: { /*'autoplay': 1,*/ 'controls': 0, 'showinfo': 0, 'rel': 0, 'modestbranding': 1 },
     videoId: 'By8vaqpcEwo',
     // 'playlist': ['By8vaqpcEwo', 'bDZsYtmq-8Y', 'UDuS3tHYu9M', 'Z3Ar3vwJdK4'],
     'startSeconds': 0,
@@ -235,7 +235,9 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
-  player.playVideo();
+  // player.playVideo();
+  play =  document.getElementById('play'); 
+  play.click();
   var player = event.target;
   iframe = document.getElementById('player');     
   updateTimerDisplay();
