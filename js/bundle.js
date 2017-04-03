@@ -219,12 +219,13 @@ function setCookie(name, value, options) {
 }
 var player, play;
 
-var x = window.innerWidth, y = window.innerHeight;
+var x = window.innerWidth, y = x/2;
+
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-    height: '500',
-    width: '850',
+    height: y,
+    width: x,
     playerVars: { /*'autoplay': 1,*/ 'controls': 0, 'showinfo': 0, 'rel': 0, 'modestbranding': 1 },
     videoId: 'By8vaqpcEwo',
     // 'playlist': ['By8vaqpcEwo', 'bDZsYtmq-8Y', 'UDuS3tHYu9M', 'Z3Ar3vwJdK4'],
@@ -528,9 +529,11 @@ function formatTime(time){
 
    });
    $('.js-video').click(function(e) {
-      $('.video-pop-up').addClass('pop-up--show');
-      $('.pop-up-bg').addClass('pop-up--show');
       player.playVideo();
+      $('.video-pop-up').addClass('pop-up--show');
+      $('.video-pop-up').css({ top: toTop });
+     var toTop = $(window).scrollTop() + ($(window).height()-$('.video-pop-up').height())/2 + 'px';
+      $('.pop-up-bg').addClass('pop-up--show');
 
    });
 
