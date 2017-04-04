@@ -1681,8 +1681,8 @@ body {
 .order {
   width: 100%;
   padding: 78px calc(50% - 640px);
-  background-attachment: fixed;
   background: url(../img/bg-order-parallax.jpg) no-repeat center 0 repeat/cover;
+  background-attachment: fixed;
 }
 
 .order__title {
@@ -1758,8 +1758,8 @@ body {
 .price-list {
   width: 100%;
   padding: 68px calc(50% - 640px) 78px;
-  background-attachment: fixed;
   background: url(../img/bg-price-list-parallax.jpg) no-repeat center 0 repeat/cover;
+  background-attachment: fixed;
 }
 
 .price-list-title {
@@ -2257,8 +2257,8 @@ body {
 .invite {
   position: relative;
   padding: 65px calc(50% - 640px);
-  background-attachment: fixed;
   background: url(../img/bg-invite-parallax.jpg) no-repeat center 0 repeat/cover;
+  background-attachment: fixed;
 }
 
 .invite::before {
