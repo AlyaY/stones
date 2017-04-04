@@ -63,11 +63,11 @@
       <h3 class="main-screen__form-title"><span class="main-screen__form-title--bold">Узнайте, сколько Вы 
         <span class="main-screen__form-title--active">сэкономите </span></span> на изделиях из габбро-диабаза и натурального камня, работая с нами
       </h3>
-      <form action="POST" class="main-screen__form form js-main-screen-form" data-form-name="Узнать сколько мы сэкономили" data-form-thanks="1">
+      <form action="POST" class="main-screen__form form js-form" data-form-name="Узнать сколько мы сэкономили" data-form-thanks="1">
         <input required type="text" name="name" class="form__input form__input--name" placeholder="Как к Вам обращаться?">
         <input required type="tel" name="phone" class="form__input form__input--phone  mask" placeholder="Куда Вам перезвонить?">
         <input required type="email" name="email" class="form__input form__input--email" placeholder="E-mail для отправки прайса">
-        <button type="submit" class="form__btn btn  js-pop-up-thanks" >Получить прайс-лист</button>
+        <button type="submit" class="form__btn btn" >Получить прайс-лист</button>
       </form>
     </div>
     <ul class="main-screen__advantages">
@@ -164,11 +164,11 @@
   </section>
   <section id="order" class="order" data-type="parallax" data-speed="15">
     <h2 class="order__title"><span class="order__title--small">Не нашли необходимый товар?<br></span> Мы разрабатываем <span class="order__title--active">изделия по индивидуальному заказу<br> </span>- просто сообщите нам об этом </h2>
-    <form action="POST" class="order__form form" data-form-name="Нужен индивидуальный товар">
+    <form action="POST" class="order__form form js-form" data-form-name="Нужен индивидуальный товар" data-form-thanks="2">
       <input required type="text" name="name" class="form__input form__input--name" placeholder="Как к Вам обращаться?">
       <input required type="tel" name="phone" class="form__input form__input--phone  mask" placeholder="Куда Вам перезвонить?">
       <input required type="email" name="email" class="form__input form__input--email" placeholder="На какой e-mail Вам написать?">
-      <button type="submit" class="form__btn btn  js-pop-up-thanks" data-form-thanks="2">Получить прайс-лист</button>
+      <button type="submit" class="form__btn btn" >Получить прайс-лист</button>
     </form>
   </section>
   <section id="about" class="about">
@@ -250,11 +250,11 @@
   <section id="price-list" class="price-list" data-type="parallax" data-speed="15">
     <h2 class="price-list-title">Скачайте прайс-лист</h2>
     <h3 class="price-list__subtitle"><span class="price-list__subtitle--active">Мы рады сделать Вам выгодное предложение </span>Чтобы узнать точные цены на карельский гранит и изделия,<br> позвоните нам или скачайте прайс-лист</h3>
-    <form action="POST" class="price-list__form form" data-form-name="Скачайть прайс-лист">
+    <form action="POST" class="price-list__form form js-form" data-form-name="Скачайть прайс-лист" data-form-thanks="1">
       <input required type="text" name="name" class="form__input form__input--name" placeholder="Как к Вам обращаться?">
       <input required type="tel" name="phone" class="form__input form__input--phone  mask" placeholder="Куда Вам перезвонить?">
       <input required type="email" name="email" class="form__input form__input--email" placeholder="На какой e-mail выслать прайс?">
-      <button type="submit" class="form__btn btn  js-pop-up-thanks" data-form-thanks="1">Получить прайс-лист</button>
+      <button type="submit" class="form__btn btn" >Получить прайс-лист</button>
     </form>
     <div class="price-list__contact">
       <p class="price-list__dscr">Или позвоните нам по номеру:</p>
@@ -323,10 +323,10 @@
     <div class="contacts__question">
       <h3 class="contacts__question-title">Остались вопросы?</h3>
       <p class="contacts__question-dscr">Закажите обратный звонок, и мы свяжемся с Вами в течение нескольких минут</p>
-      <form action="POST" class="contacts__form form" data-form-name="Заказать обратный звонок (форма: остались вопросы )">
-        <input required type="text" name="name" class="form__input form__input--name" placeholder="Как к Вам обращаться?">
+      <form action="POST" class="contacts__form form js-form" data-form-name="Заказать обратный звонок (форма: остались вопросы )" >
+        <input required type="text" name="name" class="form__input form__input--name" placeholder="Как к Вам обращаться?" data-form-thanks="2">
         <input required type="tel" name="phone" class="form__input form__input--phone  mask" placeholder="Куда Вам перезвонить?">
-        <button type="submit" class="form__btn btn  js-pop-up-thanks" data-form-thanks="2">Перезвоните мне</button>
+        <button type="submit" class="form__btn btn" >Перезвоните мне</button>
       </form>
     </div>
   </section>
@@ -357,11 +357,11 @@
     <h2 class="pop-up-form__title pop-up-form__title--chanched">Заполните   форму,
       <span class="pop-up-form__title--adedd">и мы свяжемся с Вами в<br> ближайшее время</span>
     </h2>
-    <form action="POST" class="pop-up-form__form" data-form-name="Заявка на посещение завода">
+    <form action="POST" class="pop-up-form__form  js-pop-up-form" data-form-name="Заявка на посещение завода">
       <input required type="text" name="name" class="form__input form__input--name" placeholder="Введите Ваше имя">
       <input required type="tel" name="phone" class="form__input form__input--phone  mask" placeholder="Введите Ваш телефон">
       <input required type="email" name="email" class="form__input form__input--email" placeholder="Введите Ваш e-mail">
-      <button type="submit" class="form__btn btn  js-thanks-btn">Получить каталог
+      <button type="submit" class="form__btn btn">Получить каталог
       </button>
     </form>
     <p class="pop-up-form__dscr"><b>Спасибо за доверие! </b>Мы свяжемся с Вами в ближайшее время</p>
@@ -372,11 +372,11 @@
     <h2 class="pop-up-form__title">Заполните форму,
       <span class="pop-up-form__title--adedd">и мы вышлем Вам полный каталог</span>
     </h2>
-    <form action="POST" class="pop-up-form__form" data-form-name="Выслать каталог продукции">
+    <form action="POST" class="pop-up-form__form  js-pop-up-form" data-form-name="Выслать каталог продукции">
       <input required type="text" name="name" class="form__input form__input--name" placeholder="Введите Ваше имя">
       <input required type="tel" name="phone" class="form__input form__input--phone  mask" placeholder="Введите Ваш телефон">
       <input required type="email" name="email" class="form__input form__input--email" placeholder="Введите Ваш e-mail">
-      <button type="submit" class="form__btn btn  js-thanks-btn">Получить каталог
+      <button type="submit" class="form__btn btn">Получить каталог
       </button>
     </form>
     <p class="pop-up-form__dscr"><b>Спасибо за доверие! </b>Мы свяжемся с Вами в ближайшее время</p>
@@ -387,11 +387,11 @@
     <h2 class="pop-up-form__title  pop-up-form__title--chanched">Заполните форму,
       <span class="pop-up-form__title--adedd">и мы перезвоним Вам в<br> ближайшее время</span>
     </h2>
-    <form action="POST" class="pop-up-form__form" data-form-name="Заказать обратный звонок">
+    <form action="POST" class="pop-up-form__form  js-pop-up-form" data-form-name="Заказать обратный звонок">
       <input required type="text" name="name" class="form__input form__input--name" placeholder="Введите Ваше имя">
       <input required type="tel" name="phone" class="form__input form__input--phone  mask" placeholder="Введите Ваш телефон">
       <input required type="email" name="email" class="form__input form__input--email" placeholder="Введите Ваш e-mail">
-      <button type="submit" class="form__btn btn  js-thanks-btn">Получить каталог
+      <button type="submit" class="form__btn btn">Получить каталог
       </button>
     </form>
     <p class="pop-up-form__dscr"><b>Спасибо за доверие! </b>Мы свяжемся с Вами в ближайшее время</p>
@@ -407,9 +407,9 @@
       <p class="catalog-pop-up__dscr-company">
         Наша компания занимается производством надгробий и памятников именно из карельского габбро-диабаза, все наши производственные мощности расположены в Республике Карелия
       </p>
-      <form action="POST" class="catalog-pop-up__form" data-form-name="Заказать памятники ритуальные, лавочки, цветники каменные">
+      <form action="POST" class="catalog-pop-up__form  js-catalog-form" data-form-name="Заказать памятники ритуальные, лавочки, цветники каменные">
         <input required type="tel" name="phone" class="catalog-pop-up__input" placeholder="Введите Ваш телефон">
-        <button type="submit" class="catalog-pop-up__btn js-catalog-form-btn">Заказать</button>
+        <button type="submit" class="catalog-pop-up__btn">Заказать</button>
       </form>
       <p class="pop-up-form__dscr"><b>Спасибо за доверие! </b>Мы свяжемся с Вами в ближайшее время</p>
     </div>
@@ -432,9 +432,9 @@
       <p class="catalog-pop-up__dscr-company">
         Наша компания занимается производством столешниц именно из карельского габбро-диабаза, все наши производственные мощности расположены в Республике Карелия
       </p>
-      <form action="POST" class="catalog-pop-up__form  "  data-form-name="Заказать столешницы кухонные из камня">
+      <form action="POST" class="catalog-pop-up__form  js-catalog-form"  data-form-name="Заказать столешницы кухонные из камня">
         <input required type="tel" name="phone" class="catalog-pop-up__input" placeholder="Введите Ваш телефон">
-        <button type="submit" class="catalog-pop-up__btn js-catalog-form-btn">Заказать</button>
+        <button type="submit" class="catalog-pop-up__btn">Заказать</button>
       </form>
       <p class="pop-up-form__dscr"><b>Спасибо за доверие! </b>Мы свяжемся с Вами в ближайшее время</p>
     </div>
@@ -456,9 +456,9 @@
       <p class="catalog-pop-up__dscr-company">
         Наша компания занимается производством лестниц именно из карельского габбро-диабаза, все наши производственные мощности расположены в Республике Карелия
       </p>
-      <form action="POST" class="catalog-pop-up__form" data-form-name="Заказать вазы, лестницы, балясины, перила каменные">
+      <form action="POST" class="catalog-pop-up__form  js-catalog-form" data-form-name="Заказать вазы, лестницы, балясины, перила каменные">
         <input required type="tel" name="phone" class="catalog-pop-up__input" placeholder="Введите Ваш телефон">
-        <button type="submit" class="catalog-pop-up__btn js-catalog-form-btn">Заказать</button>
+        <button type="submit" class="catalog-pop-up__btn">Заказать</button>
       </form>
       <p class="pop-up-form__dscr"><b>Спасибо за доверие! </b>Мы свяжемся с Вами в ближайшее время</p>
     </div>
@@ -480,9 +480,9 @@
       <p class="catalog-pop-up__dscr-company">
         Наша компания занимается производством плиток именно из карельского габбро-диабаза, все наши производственные мощности расположены в Республике Карелия
       </p>
-      <form action="POST" class="catalog-pop-up__form" data-form-name="Заказать плитка из натурального камня">
+      <form action="POST" class="catalog-pop-up__form  js-catalog-form" data-form-name="Заказать плитка из натурального камня">
         <input required type="tel" name="phone" class="catalog-pop-up__input" placeholder="Введите Ваш телефон">
-        <button type="submit" class="catalog-pop-up__btn js-catalog-form-btn">Заказать</button>
+        <button type="submit" class="catalog-pop-up__btn">Заказать</button>
       </form>
       <p class="pop-up-form__dscr"><b>Спасибо за доверие! </b>Мы свяжемся с Вами в ближайшее время</p>
     </div>
@@ -500,9 +500,9 @@
         Предлагаем к реализации каменную корку различных размеров. Продукция изготовлена из качественного карельского габбродиабаза и отвечает всем требованиям современных производств камнеобработки.
       </p>
       <p class="catalog-pop-up__dscr-price">Корки (скала, горб) окантованные неполированные - <span>800</span> <b>руб. за м. кв.</b></p>
-      <form action="POST" class="catalog-pop-up__form" data-form-name="Заказать скала (корка, горб) из габбро-диабаза">
+      <form action="POST" class="catalog-pop-up__form  js-catalog-form" data-form-name="Заказать скала (корка, горб) из габбро-диабаза">
         <input required type="tel" name="phone" class="catalog-pop-up__input" placeholder="Введите Ваш телефон">
-        <button type="submit" class="catalog-pop-up__btn js-catalog-form-btn">Заказать</button>
+        <button type="submit" class="catalog-pop-up__btn">Заказать</button>
       </form>
       <p class="pop-up-form__dscr"><b>Спасибо за доверие! </b>Мы свяжемся с Вами в ближайшее время</p>
     </div>
@@ -523,9 +523,9 @@
       <p class="catalog-pop-up__dscr-company">
         Наша компания занимается производством брусчатки именно из карельского габбро-диабаза, все наши производственные мощности расположены в Республике Карелия
       </p>
-      <form action="POST" class="catalog-pop-up__form" data-form-name="Заказать паребрики, брусчатка из натурального камня">
+      <form action="POST" class="catalog-pop-up__form  js-catalog-form" data-form-name="Заказать паребрики, брусчатка из натурального камня">
         <input required type="tel" name="phone" class="catalog-pop-up__input" placeholder="Введите Ваш телефон">
-        <button type="submit" class="catalog-pop-up__btn js-catalog-form-btn">Заказать</button>
+        <button type="submit" class="catalog-pop-up__btn">Заказать</button>
       </form>
       <p class="pop-up-form__dscr"><b>Спасибо за доверие! </b>Мы свяжемся с Вами в ближайшее время</p>
     </div>

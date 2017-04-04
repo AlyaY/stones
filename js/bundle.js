@@ -460,8 +460,8 @@ function formatTime(time){
      });
      $('[data-form-thanks=' + $(this).data('formThanks') + '], .pop-up-bg').addClass('pop-up--show');
    });*/
-   $(".js-main-screen-form").submit(function(e) {
-     e.preventDefault();
+   $(".js-form").submit(function(e) {
+     // e.preventDefault();
      var form_data = $(this).serialize() + "&form=" + encodeURIComponent($(this).data('formName'));
      $.ajax({
        type: "POST",
@@ -483,7 +483,7 @@ function formatTime(time){
      $('.pop-up-bg').toggleClass('pop-up--show');
    });
 
-   $('.js-thanks-btn').click(function(e) {
+/*   $('.js-thanks-btn').click(function(e) {
      e.preventDefault();
      var form = $(this).parent();
      var form_data = form.serialize() + "&form=" + encodeURIComponent(form.data('formName'));
@@ -501,6 +501,25 @@ function formatTime(time){
      form.children("input").each(function(index, elem) {
        $(elem).val('');
      });
+   }); */  
+
+   $('.js-pop-up-form').submit(function(e) {
+     // e.preventDefault();
+     var form_data = $(this).serialize() + "&form=" + encodeURIComponent($(this).data('formName'));
+     $.ajax({
+       type: "POST",
+       url: "http://stonemarket.de/php/mail.php",
+       data: form_data
+       // ,
+       // success: function success() {
+       //   form.reset();
+       // }
+     });
+
+     $(this).siblings('.pop-up-form__dscr').show();
+     $(this).children("input").each(function(index, elem) {
+       $(elem).val('');
+     });
    });
 
 
@@ -512,7 +531,9 @@ function formatTime(time){
      popUp.addClass('pop-up--show');
      $('.pop-up-bg').toggleClass('pop-up--show');
    });
-   $('.js-catalog-form-btn').click(function(e) {
+
+
+   $('.js-catalog-form').click(function(e) {
      e.preventDefault();
      var form = $(this).parent();
      var form_data = form.serialize() + "&form=" + encodeURIComponent(form.data('formName'));
@@ -530,6 +551,24 @@ function formatTime(time){
        $(elem).val('');
      });
    });
+   /* $('.js-catalog-form-btn').click(function(e) {
+     e.preventDefault();
+     var form = $(this).parent();
+     var form_data = form.serialize() + "&form=" + encodeURIComponent(form.data('formName'));
+     $.ajax({
+       type: "POST",
+       url: "http://stonemarket.de/php/mail.php",
+       data: form_data,
+       success: function success() {
+         form.reset();
+       }
+     });
+
+     form.siblings('.pop-up-form__dscr').show();
+     form.children("input").each(function(index, elem) {
+       $(elem).val('');
+     });
+   });*/
 
 
    $('.magnific-video').magnificPopup({
