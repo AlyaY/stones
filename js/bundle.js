@@ -443,7 +443,7 @@ function formatTime(time){
      $('.pop-up-bg').toggleClass('pop-up--show');
    });
 
-   $(".js-pop-up-thanks").click(function(e) {
+   /*$(".js-pop-up-thanks").click(function(e) {
      e.preventDefault();
      var form = $(this).parent();
      var form_data = form.serialize() + "&form=" + encodeURIComponent(form.data('formName'));
@@ -456,6 +456,22 @@ function formatTime(time){
          // }
      });
      form.children("input").each(function(index, elem) {
+       $(elem).val('');
+     });
+     $('[data-form-thanks=' + $(this).data('formThanks') + '], .pop-up-bg').addClass('pop-up--show');
+   });*/
+   $(".js-main-screen-form").submit(function(e) {
+     e.preventDefault();
+     var form_data = $(this).serialize() + "&form=" + encodeURIComponent($(this).data('formName'));
+     $.ajax({
+       type: "POST",
+       url: "http://stonemarket.de/php/mail.php",
+       data: form_data
+         // success: function success() {
+         //   console.log('yes 2');
+         // }
+     });
+     $(this).children("input").each(function(index, elem) {
        $(elem).val('');
      });
      $('[data-form-thanks=' + $(this).data('formThanks') + '], .pop-up-bg').addClass('pop-up--show');
@@ -531,8 +547,8 @@ function formatTime(time){
    $('.js-video').click(function(e) {
       player.playVideo();
       $('.video-pop-up').addClass('pop-up--show');
+     var toTop = ($(window).height()-$('.video-pop-up').height())/2 + 'px';
       $('.video-pop-up').css({ top: toTop });
-     var toTop = $(window).scrollTop() + ($(window).height()-$('.video-pop-up').height())/2 + 'px';
       $('.pop-up-bg').addClass('pop-up--show');
 
    });

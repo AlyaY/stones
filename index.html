@@ -63,11 +63,11 @@
       <h3 class="main-screen__form-title"><span class="main-screen__form-title--bold">Узнайте, сколько Вы 
         <span class="main-screen__form-title--active">сэкономите </span></span> на изделиях из габбро-диабаза и натурального камня, работая с нами
       </h3>
-      <form action="POST" class="main-screen__form form" data-form-name="Узнать сколько мы сэкономили">
+      <form action="POST" class="main-screen__form form js-main-screen-form" data-form-name="Узнать сколько мы сэкономили" data-form-thanks="1">
         <input required type="text" name="name" class="form__input form__input--name" placeholder="Как к Вам обращаться?">
         <input required type="tel" name="phone" class="form__input form__input--phone  mask" placeholder="Куда Вам перезвонить?">
         <input required type="email" name="email" class="form__input form__input--email" placeholder="E-mail для отправки прайса">
-        <button type="submit" class="form__btn btn  js-pop-up-thanks" data-form-thanks="1">Получить прайс-лист</button>
+        <button type="submit" class="form__btn btn  js-pop-up-thanks" >Получить прайс-лист</button>
       </form>
     </div>
     <ul class="main-screen__advantages">
@@ -432,7 +432,7 @@
       <p class="catalog-pop-up__dscr-company">
         Наша компания занимается производством столешниц именно из карельского габбро-диабаза, все наши производственные мощности расположены в Республике Карелия
       </p>
-      <form action="POST" class="catalog-pop-up__form" data-form-name="Заказать столешницы кухонные из камня">
+      <form action="POST" class="catalog-pop-up__form  "  data-form-name="Заказать столешницы кухонные из камня">
         <input required type="tel" name="phone" class="catalog-pop-up__input" placeholder="Введите Ваш телефон">
         <button type="submit" class="catalog-pop-up__btn js-catalog-form-btn">Заказать</button>
       </form>
@@ -551,6 +551,36 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
   <script src="js/bundle.min.js"></script>
+
+  <!-- Yandex.Metrika counter --> 
+  <script type="text/javascript"> 
+  (function (d, w, c) { 
+  (w[c] = w[c] || []).push(function() { 
+  try { 
+  w.yaCounter43882414 = new Ya.Metrika({ 
+  id:43882414, 
+  clickmap:true, 
+  trackLinks:true, 
+  accurateTrackBounce:true, 
+  webvisor:true 
+  }); 
+  } catch(e) { } 
+  }); 
+
+  var n = d.getElementsByTagName("script")[0], 
+  s = d.createElement("script"), 
+  f = function () { n.parentNode.insertBefore(s, n); }; 
+  s.type = "text/javascript"; 
+  s.async = true; 
+  s.src = "https://mc.yandex.ru/metrika/watch.js"; 
+
+  if (w.opera == "[object Opera]") { 
+  d.addEventListener("DOMContentLoaded", f, false); 
+  } else { f(); } 
+  })(document, window, "yandex_metrika_callbacks"); 
+  </script> 
+  <noscript><div><img src="https://mc.yandex.ru/watch/43882414" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+  <!-- /Yandex.Metrika counter -->
 </body>
 
 </html>
